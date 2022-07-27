@@ -44,5 +44,5 @@ RUN yum clean all && rm -rf /var/cache/yum
 
 EXPOSE 80 443
 COPY run-wrapper.sh /usr/local/bin/run-wrapper.sh
-CMD /usr/local/bin/run-wrapper.sh
+ENTRYPOINT ["/usr/local/bin/run-wrapper.sh"]
 

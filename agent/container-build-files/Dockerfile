@@ -1,5 +1,8 @@
 FROM almalinux:8
+# Architecture argument: amd64 ppc64le
+ARG ARCH
 
+# Configuration which repo to use for build
 ARG GITREPO=siterm
 ARG GITORG=sdn-sense
 ARG GITBR=master

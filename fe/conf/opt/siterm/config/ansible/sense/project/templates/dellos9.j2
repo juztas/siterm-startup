@@ -100,7 +100,6 @@ interface Vlan {{ vlan_id[1] }}
   {% endif %}
 {% endfor %}
 {% endif %}
-
 {% if sense_bgp is defined and sense_bgp %}
 {% set bgp = sense_bgp %}
   {% if bgp.asn is defined and bgp.asn %}
@@ -253,3 +252,4 @@ route-map {{ rmapname }} permit {{ permitval }}
     {% endfor %}
   {% endif %}
 {% endif %}
+
